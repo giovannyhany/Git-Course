@@ -1,0 +1,15 @@
+LaunchTargetManager/configs/StudentManagementSystem.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/double_LL.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/single_LL.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/single_linked_list.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/test.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:single_linked_list.exe,org.eclipse.launchbar.core.descriptorType.default\:test.exe,org.eclipse.launchbar.core.descriptorType.default\:StudentManagementSystem.exe,org.eclipse.launchbar.core.descriptorType.default\:double_LL.exe,org.eclipse.launchbar.core.descriptorType.default\:single_LL.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:double_LL.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:double_LL.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:single_LL.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:single_linked_list.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:single_linked_list.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

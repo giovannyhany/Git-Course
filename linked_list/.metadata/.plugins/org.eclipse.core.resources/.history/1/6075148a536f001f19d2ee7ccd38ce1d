@@ -1,0 +1,48 @@
+/*
+ * Management.c
+ *
+ *  Created on: Sep 10, 2024
+ *      Author: Giovanny
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "Management.h"
+#include "PlatformType.h"
+
+void AddStudent(const StudentData *const Ptr)
+{
+
+}
+
+void DisplayStudents(void)
+{
+
+}
+
+void SearchStudentByID(int ID)
+{
+
+}
+
+void UpdateStudent(int ID)
+{
+
+}
+
+float CalculateAverageGPA(void)
+{
+
+}
+
+void SearchHighestGPA(void)
+{
+
+}
+
+void DeleteStudent(int ID)
+{
+
+}
+
+
+

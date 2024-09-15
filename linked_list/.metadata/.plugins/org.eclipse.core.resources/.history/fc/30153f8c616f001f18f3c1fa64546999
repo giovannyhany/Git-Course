@@ -1,0 +1,132 @@
+/*
+ * Management.c
+ *
+ *  Created on: Sep 10, 2024
+ *      Author: Giovanny
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "Management.h"
+#include "PlatformType.h"
+
+StudentList *Head=NULL;
+
+void AddStudent(const StudentData *const Ptr)
+{
+	StudentList *NewData=NULL;
+	StudentList *temp=Head;
+	uint8 found=0;
+	if (Head==NULL)
+	{
+		NewData=(StudentList *)malloc(sizeof(StudentList));
+		if (NewData==NULL)
+		{
+				printf("ERROR!! there isn't enough space to add new student\n");
+		}
+		else
+		{
+			(NewData->Data).ID=Ptr->ID;
+			for (int i=0;i<50;i++)
+				(NewData->Data).Name[i]=Ptr->Name[i];
+			(NewData->Data).Age=Ptr->Age;
+			(NewData->Data).GPA=Ptr->GPA;
+			NewData->Next=NULL;
+			Head=NewData;
+			printf("\t\tData added successfully :)\n");
+		}
+	}
+
+	else
+	{
+		if ((temp->Data).ID==Ptr->ID)//to check Head ID value in case no values added after it
+			found=1;
+
+		while (temp->Next != NULL)
+		{
+			if ((temp->Data).ID==Ptr->ID)
+			{
+				found=1;
+				break;
+			}
+			else
+			{
+				temp=temp->Next;
+			}
+		}
+
+		if (found==0)
+		{
+			NewData=(StudentList *)malloc(sizeof(StudentList));
+			if (NewData==NULL)
+			{
+				printf("ERROR!! there isn't enough space to add new student\n");
+			}
+			else
+			{
+				(NewData->Data).ID=Ptr->ID;
+				for (int i=0;i<50;i++)
+					(NewData->Data).Name[i]=Ptr->Name[i];
+				(NewData->Data).Age=Ptr->Age;
+				(NewData->Data).GPA=Ptr->GPA;
+				NewData->Next=NULL;
+				temp->Next=NewData;
+				printf("\t\tData added successfully :)\n");
+			}
+		}
+		else
+		{
+			printf("ERROR!! the ID you entered is repeated\n");
+		}
+	}
+}
+
+void DisplayStudents(void)
+{
+	StudentList *temp=Head;
+	uint16 i=1;
+	if(Head==NULL)
+	{
+		printf("There isn't any student yet\n");
+	}
+	else
+	{
+		do
+		{
+			printf("student %i-> ID  :%i\n",i,temp->Data.ID);
+			printf("             Name:%s\n",temp->Data.Name);
+			printf("             Age :%i\n",temp->Data.Age);
+			printf("             GPA :%0.2f\n",temp->Data.GPA);
+			i++;
+			if (temp->Next != NULL)
+				temp=temp->Next;
+		}while(temp->Next != NULL);
+	}
+}
+
+void SearchStudentByID(int ID)
+{
+
+}
+
+void UpdateStudent(int ID)
+{
+
+}
+
+float CalculateAverageGPA(void)
+{
+
+}
+
+void SearchHighestGPA(void)
+{
+
+}
+
+void DeleteStudent(int ID)
+{
+
+}
+
+
+

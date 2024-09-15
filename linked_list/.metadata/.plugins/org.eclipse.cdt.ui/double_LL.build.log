@@ -1,0 +1,7 @@
+12:27:52 **** Incremental Build of configuration Debug for project double_LL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\double_LL.o" "..\\src\\double_LL.c" 
+gcc -o double_LL.exe "src\\double_LL.o" "src\\linked_list.o" 
+
+12:27:53 Build Finished. 0 errors, 0 warnings. (took 1s.0ms)
+

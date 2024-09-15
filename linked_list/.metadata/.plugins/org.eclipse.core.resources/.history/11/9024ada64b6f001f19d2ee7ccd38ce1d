@@ -1,0 +1,12 @@
+/*
+ * Management.c
+ *
+ *  Created on: Sep 10, 2024
+ *      Author: Giovanny
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "Management.h"
+#include "PlatformType.h"
+
+

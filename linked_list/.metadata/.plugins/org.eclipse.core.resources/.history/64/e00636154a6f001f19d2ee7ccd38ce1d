@@ -1,0 +1,15 @@
+/*
+ ============================================================================
+ Name        : StudentManagementSystem.c
+ Author      : giovanny hany
+ Description : Student Management System
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	return EXIT_SUCCESS;
+}
